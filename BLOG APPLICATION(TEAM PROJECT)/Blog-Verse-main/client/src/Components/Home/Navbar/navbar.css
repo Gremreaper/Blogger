@@ -1,0 +1,276 @@
+.navBody{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 1vw;
+    background-color: white;
+    height: 10vh;
+    z-index: 10;
+    box-shadow: 0 1px 3px 0 #939393;
+}
+
+.topColor{
+    height: 0.5vw;
+    background: linear-gradient(to right, #ffeb3b, #ff5722, #2196f3, #9c27b0);
+    width: 100%;
+}
+
+.mainDiv{
+    padding-top: 1vw;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.website-name{
+    margin-left: 1vw;
+    float: left;
+}
+
+.website-name button{
+    border: none;
+    background-color: transparent;
+    font-style: italic;
+    font-size: 2vw;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.categories{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 25vw;
+}
+
+.hamburger {
+    display: none; /* Hide hamburger by default */
+  }
+
+
+.categories ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1vw;
+    padding: 0;
+    margin: 0;
+}
+
+.categories button{
+    border: none;
+    background-color: transparent;
+    font-size: 1vw;
+}
+
+.categories button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.author{
+    text-transform: none;
+}
+
+.navbar-right{
+    float: right;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-right: 2vw;
+}
+
+.notifications{
+    margin: auto;
+    margin-right: 1vw;
+    position: relative;
+}
+
+.notifications p{
+    position: absolute;
+    top: -20px;
+    right: -15px;
+    background-color: red;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    color: white;
+    padding: 10%;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.notifi-box{
+    position: absolute;
+    right: 9vw;
+    top: 4vw;
+    width: 30%;
+    margin: 0 1vw 1vw auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px 0 #bfbebe;
+    padding: 0;
+    overflow: hidden;
+}
+
+.notification-top{
+    padding: 1vw 0.5vw;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    border-bottom: 2px solid lightgray;
+}
+
+.notification-top h1{
+    font-size: 1.3vw;
+    margin: 0 35% 0 1vw;
+}
+
+.notification-top p{
+    font-size: 0.9vw;
+    color: rgb(0, 68, 255);
+    display: inline-block;
+    margin: 0;
+    cursor: pointer;
+}
+
+.notifis{
+    background-color: aliceblue;
+    max-height: 20vw;
+    overflow-y: scroll;
+}
+
+.incoming-notification{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    padding: 1vw;
+    border-bottom: 1px solid lightgray;
+}
+
+.notifi-img{
+    width: 4vw;
+    height: 4vw;
+    margin: 0;
+    margin-right: 1vw;
+}
+
+.incoming-name{
+    margin: 0;
+}
+
+.incoming-time{
+    margin: 0;
+    margin-top: 0.2vw;
+    opacity: 0.7;
+    font-size: 0.9vw;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 650px)
+{
+    .navBody{
+        height: 7%;
+    }
+    .topColor{
+        height: 10%;
+    }
+    .website-name button{
+        font-size: 20px;
+    }
+    #middle-button{
+        font-size: 70%;
+    }
+    .mainDiv{
+        padding-top:1%;
+        /* display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between; */
+    }
+
+    .categories {
+        display: none; /* Hide categories by default */
+      }
+      
+      .hamburger {
+        display: block; /* Show hamburger icon */
+      }
+
+    
+    .notifications{
+        margin: auto;
+        margin-right: 1vw;
+        position: relative;
+    }
+
+    .notifications p{
+        right: -12px;
+        font-size: 80%;
+    }
+
+    .notifi-box{
+        top: 100%;
+
+        width: 70%;
+        margin: 0 1vw 1vw auto;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 1px 3px 0 #bfbebe;
+        padding: 0;
+    }
+
+    .notification-top{
+        padding: 2vw;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+        border-bottom: 2px solid lightgray;
+    }
+
+.notification-top h1{
+    font-size: 110%;
+    margin: 0 35% 0 1vw;
+}
+
+.notification-top p{
+    font-size: 100%;
+}
+
+.notifis{
+    background-color: aliceblue;
+    max-height: 20vw;
+    overflow-y: scroll;
+}
+
+.incoming-notification{
+    padding: 2vw;
+}
+
+.notifi-img{
+    width: 10vw;
+    height: 10vw;
+    margin-right: 2vw;
+}
+
+.incoming-name{
+    font-size: 95%;
+}
+
+.incoming-time{
+    margin: 0;
+    margin-top: 0.5vw;
+    opacity: 0.7;
+    font-size: 90%;
+    font-weight: 500;
+}
+}
+
+
+
+
