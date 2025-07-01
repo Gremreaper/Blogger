@@ -47,8 +47,11 @@
   <p><a href="https://bloggverse.netlify.app/" target="_blank">Try Blog-Verse Live</a></p>
 
   <h2>📸 Preview</h2>
-  <img src="client/assets/blog-preview.png" alt="Blog-Verse App Screenshot" style="width:100%;max-width:600px;border:1px solid #ccc;">
-
+  <img src="/Screenshot_Images/Screenshot (1008).png" alt="Blog-Verse App Screenshot" style="width:100%;max-width:600px;border:1px solid #ccc;">
+  <img src="/Screenshot_Images/Screenshot (1009).png" alt="Blog-Verse App Screenshot" style="width:100%;max-width:600px;border:1px solid #ccc;">
+ <img src="/Screenshot_Images/Screenshot (1010).png" alt="Blog-Verse App Screenshot" style="width:100%;max-width:600px;border:1px solid #ccc;">
+ <img src="/Screenshot_Images/Screenshot (1011).png" alt="Blog-Verse App Screenshot" style="width:100%;max-width:600px;border:1px solid #ccc;">
+ 
   <h2>📦 Tech Stack</h2>
   <ul>
     <li>MongoDB</li>
